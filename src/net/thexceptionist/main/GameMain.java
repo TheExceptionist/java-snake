@@ -13,6 +13,7 @@ public class GameMain {
 		//Setup the window (called a JFrame in Java)
 		JFrame window = new JFrame(GameMain.title);
 		GameEngine game = new GameEngine();
+		window.add(game);
 		
 		//Initialize some window stuff
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,7 +21,6 @@ public class GameMain {
 		window.setVisible(true);
 		window.setResizable(false);
 		window.setLocationRelativeTo(null);
-		window.add(game);
 		
 		//Called the game object's start method
 		game.start();
