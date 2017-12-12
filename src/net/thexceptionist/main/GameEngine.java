@@ -98,7 +98,7 @@ public class GameEngine extends Canvas implements Runnable{
 		
 		this.addKeyListener(listener);
 		
-		manager.addObject(new Ball(GameMain.WIDTH/2, GameMain.HEIGHT/3, 6, 6, 0));
+		manager.addObject(new Ball(GameMain.WIDTH/2, GameMain.HEIGHT/3, 10, 10, 0));
 		manager.addObject(new Player(16, 50, 16, 32, 1));
 		manager.addObject(new Player(GameMain.WIDTH - 32, 50, 16, 32, 2));
 		

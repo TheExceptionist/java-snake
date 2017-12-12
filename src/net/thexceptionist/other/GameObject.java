@@ -40,7 +40,7 @@ public class GameObject {
 	}
 	
 	public void update(final Graphics g){
-		//Constantly added the velocity to teh position of an object
+		//Constantly added the velocity to the position of an object
 		x += velX;
 		y += velY;
 		
@@ -48,7 +48,7 @@ public class GameObject {
 			y = 2;
 			reboundY();		
 		}
-		//Adust so the ball rebounds once it reachs one edge of the screen
+		//Adjust so the ball rebounds once it reaches one edge of the screen
 		if (y >= GameMain.HEIGHT - 32) {
 			//SEt the y so the ball doesn't get stuck on one side of the screen
 			y = GameMain.HEIGHT - 34;
