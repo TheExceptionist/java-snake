@@ -1,5 +1,7 @@
 package net.thexceptionist.main;
 
+import java.util.Scanner;
+
 import javax.swing.JFrame;
 
 public class GameMain {
@@ -8,8 +10,13 @@ public class GameMain {
 	public static final int TILE_SIZE = 16;
 	//Title of the window
 	public static final String title = "Pong";
+	public static String player1 = "";
 	
 	public static void main(String[] args){
+		System.out.println("Player 1, what is your name?");
+		Scanner myScan = new Scanner(System.in);
+		player1 = myScan.next();
+
 		//Setup the window (called a JFrame in Java)
 		JFrame window = new JFrame(GameMain.title);
 		GameEngine game = new GameEngine();
@@ -23,6 +30,7 @@ public class GameMain {
 		window.setLocationRelativeTo(null);
 		
 		//Called the game object's start method
+		
 		game.start();
 	}
 }

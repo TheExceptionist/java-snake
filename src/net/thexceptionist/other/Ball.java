@@ -14,14 +14,17 @@ public class Ball extends GameObject{
 	 */
 	public static final int BALL_SPEED = 1;
 	public static final int BALL_SPEED_MAX = 3;
+
+	
 	
 	//the score the ball gives to the winning player
 	private int score;
 	//Color of the ball
 	//Set using Color.BLACK or any other color
-	private Color color;
+	private Color color = Color.CYAN;
 	//Start position of the ball - shouldn't be anything other than the center of the screen
-	private int startX, startY;
+	private int startX = 0; 
+	private int	startY = 0;
 	
 	/**
 	 *  - Create a ball at position x,y 
